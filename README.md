@@ -1,5 +1,45 @@
 # jQuery Dream Stream
 
-Don't mess with the Chuck.
+## Installation
 
-For real though, I need some docs here.
+It can be installed via npm:
+
+```
+npm install jquery-dreamstream
+```
+
+or, alternatively just cloned via git:
+
+```
+git clone git@github.com:zakangelle/jquery-dreamstream.git
+```
+
+jQuery Dream Stream can be used as a CommonJS module:
+
+```
+require('jquery-dreamstream');
+```
+
+or loaded in by just using a script tag:
+
+```
+<script src="jquery-dreamstream/jquery-dreamstream.js"></script>
+```
+
+## Use
+
+To use the plugin, just select the element you'd like to stream and call the `dreamStream()` method on it:
+
+```
+$('.stream').dreamStream();
+```
+
+Alternatively, you can call `dreamStream()` with options:
+
+```
+$('.stream).dreamStream({
+  interval     : 2000,
+  speed        : 200,
+  onAfterScroll: function() { alert('hey, scroll just finished') })
+});
+```
