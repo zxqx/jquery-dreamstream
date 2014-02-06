@@ -37,7 +37,7 @@ $('.stream').dreamStream();
 Alternatively, you can call `dreamStream()` with options:
 
 ```
-$('.stream).dreamStream({
+$('.stream').dreamStream({
   interval     : 2000,
   speed        : 200,
   onAfterScroll: function() { alert('hey, scroll just finished') })
