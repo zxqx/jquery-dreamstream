@@ -1,5 +1,7 @@
 # jQuery Dream Stream
 
+A simple vertical list scroller plugin for jQuery.
+
 ## Installation
 
 It can be installed via npm:
