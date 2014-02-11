@@ -1,6 +1,6 @@
 {
   "name": "jquery-dreamstream",
-  "version": "0.1.2",
-  "description": "Don't mess with the Chuck",
+  "version": "0.1.3",
+  "description": "A simple vertical list scroller plugin for jQuery.",
   "repository": "git@github.com:zakangelle/jquery-dreamstream.git"
 }
