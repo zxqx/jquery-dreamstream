@@ -31,22 +31,20 @@
 
       setActiveItem(0);
 
+      if ($container.data('dreamstream')) return;
+
       var scroll = setInterval(scrollDown, options.interval);
 
       function scrollDown()
       {
         if (!scrolling) return;
 
-        if (!$element.is(':visible')) {
-          clearInterval(scroll);
-          return;
-        }
-
         var $container   = $element.find('ul');
         var scrollAmount = getAmountToScroll();
 
         // Do the scrolling magic
         $container
+          .data('dreamstream', true)
           .css({ position: 'relative' })
           .animate({ top: scrollAmount },
             options.speed, function() {
@@ -72,8 +70,7 @@
 
       function getAmountToScroll()
       {
-        // Get that +30 shit outta there
-        return '-' + (getActiveItem().height() + 30) + 'px';
+        return '-' + (getActiveItem().outerHeight()) + 'px';
       }
 
       function getActiveItem()
