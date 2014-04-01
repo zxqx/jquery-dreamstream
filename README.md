@@ -16,13 +16,13 @@ or, alternatively just cloned via git:
 git clone git@github.com:zakangelle/jquery-dreamstream.git
 ```
 
-jQuery Dream Stream can be used as a CommonJS module:
+Can be used as a CommonJS module:
 
 ```js
 require('jquery-dreamstream');
 ```
 
-or loaded in by just using a script tag:
+or loaded in by using a script tag:
 
 ```html
 <script src="jquery-dreamstream/jquery-dreamstream.js"></script>
@@ -30,16 +30,28 @@ or loaded in by just using a script tag:
 
 ## Use
 
-To use the plugin, just select the element you'd like to stream and call the `dreamStream()` method on it:
+Wrap your `<ul>` of stream items in a container and call the `dreamStream()` method on the container element:
 
+**Markup**
+```html
+<div class="dream-stream">
+  <ul>
+    <li>Stream Item 1</li>
+    <li>Stream Item 2</li>
+    <li>Stream Item 3</li>
+  </ul>
+</div>
+```
+
+**JS**
 ```js
-$('.stream').dreamStream();
+$('.dream-stream').dreamStream();
 ```
 
 Alternatively, you can call `dreamStream()` with options:
 
 ```js
-$('.stream').dreamStream({
+$('.dream-stream').dreamStream({
   interval     : 2000,
   speed        : 200,
   onAfterScroll: function() { alert('hey, scroll just finished') })
