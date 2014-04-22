@@ -8,6 +8,7 @@
     var defaults = {
       interval     : 6000,
       speed        : 600,
+      direction    : 'down',
       onAfterScroll: null
     };
 
@@ -28,10 +29,46 @@
     return this.each(function() {
       var $element   = $(this);
       var $container = $element.find('ul');
+      var scroll;
 
       setActiveItem(0);
+      
+      // Decide scroll direction
+      if (options.direction === 'up') {
+        scroll = setInterval(scrollUp, options.interval);
+      }
+      else if (options.direction === 'down') {
+        scroll = setInterval(scrollDown, options.interval);
+      }
 
-      var scroll = setInterval(scrollDown, options.interval);
+      function scrollUp()
+      {
+        if (!scrolling) return;
+        if (!$element.is(':visible')) return;
+
+        var $container   = $element.find('ul');
+        var lastItem     = getItems().last();
+        var scrollAmount = lastItem.height() + 30;
+
+        $container
+          .css({
+            position: 'relative',
+            top: '-' + scrollAmount + 'px'
+          })
+          .prepend(lastItem);
+        
+        // Do the scrolling magic
+        $container
+          .css({ position: 'relative' })
+          .animate({ top: 0 },
+            options.speed, function() {
+
+              setActiveItem(0);
+
+              if (options.onAfterScroll)
+                options.onAfterScroll();
+            });
+      }
 
       function scrollDown()
       {
@@ -65,11 +102,12 @@
       {
         return $container.children();
       }
-
+      
       function getAmountToScroll()
       {
-        // Get that +30 shit outta there
-        return '-' + (getActiveItem().height() + 30) + 'px';
+        var amountToScroll = '-' + (getActiveItem().height() + 30) + 'px'; 
+        
+        return amountToScroll;
       }
 
       function getActiveItem()
@@ -89,4 +127,5 @@
   };
 
 })(jQuery);
+
 
