@@ -54,6 +54,7 @@ Alternatively, you can call `dreamStream()` with options:
 $('.dream-stream').dreamStream({
   interval     : 2000,
   speed        : 200,
-  onAfterScroll: function() { alert('hey, scroll just finished') })
+  direction    : 'up',
+  onAfterScroll: function() { console.log('hey, scroll just finished') }
 });
 ```
