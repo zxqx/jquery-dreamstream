@@ -13,7 +13,7 @@ npm install jquery-dreamstream
 or, alternatively just cloned via git:
 
 ```
-git clone git@github.com:zakangelle/jquery-dreamstream.git
+git clone https://github.com/zakangelle/jquery-dreamstream.git
 ```
 
 Can be used as a CommonJS module:
