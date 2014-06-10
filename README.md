@@ -4,28 +4,10 @@ A simple vertical list scroller plugin for jQuery.
 
 ## Installation
 
-It can be installed via npm:
+via npm:
 
 ```
-npm install jquery-dreamstream
-```
-
-or, alternatively just cloned via git:
-
-```
-git clone https://github.com/zakangelle/jquery-dreamstream.git
-```
-
-Can be used as a CommonJS module:
-
-```js
-require('jquery-dreamstream');
-```
-
-or loaded in by using a script tag:
-
-```html
-<script src="jquery-dreamstream/jquery-dreamstream.js"></script>
+$ npm install jquery-dreamstream
 ```
 
 ## Use
@@ -45,6 +27,9 @@ Wrap your `<ul>` of stream items in a container and call the `dreamStream()` met
 
 **JS**
 ```js
+var $ = require('jquery');
+require('jquery-dreamstream');
+
 $('.dream-stream').dreamStream();
 ```
 
