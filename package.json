@@ -2,10 +2,7 @@
   "name": "jquery-dreamstream",
   "version": "0.1.8",
   "description": "A simple vertical list scroller plugin for jQuery.",
-  "main": "index.js",
-  "scripts": {
-    "build": "browserify index.js > output.js"
-  },
+  "main": "jquery.dreamstream.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:zakangelle/jquery-dreamstream.git"
