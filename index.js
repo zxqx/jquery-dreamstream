@@ -1,8 +1,12 @@
+var $           = require('jquery');
 var DreamStream = require('./lib/DreamStream.js');
 
-(function($) {
-  $.fn.dreamStream = function(options) {
-    return new DreamStream(this, options);
-  };
+// TEMP - expose global jQua
+global.$ = $;
 
-})(jQuery);
+$.fn.dreamStream = function(options) {
+  return this.each(function() {
+    var dreamStream = new DreamStream($(this), options);
+    dreamStream.start();
+  });
+};
