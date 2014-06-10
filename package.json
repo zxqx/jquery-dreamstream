@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/zakangelle/jquery-dreamstream/issues"
   },
-  "homepage": "https://github.com/zakangelle/jquery-dreamstream"
+  "homepage": "https://github.com/zakangelle/jquery-dreamstream",
+  "dependencies": {
+    "jquery": "^2.1.1"
+  }
 }
