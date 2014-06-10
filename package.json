@@ -2,12 +2,20 @@
   "name": "jquery-dreamstream",
   "version": "0.1.8",
   "description": "A simple vertical list scroller plugin for jQuery.",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:zakangelle/jquery-dreamstream.git"
   },
-  "readme": "# jQuery Dream Stream\n\nA simple vertical list scroller plugin for jQuery.\n\n## Installation\n\nIt can be installed via npm:\n\n```\nnpm install jquery-dreamstream\n```\n\nor, alternatively just cloned via git:\n\n```\ngit clone git@github.com:zakangelle/jquery-dreamstream.git\n```\n\njQuery Dream Stream can be used as a CommonJS module:\n\n```js\nrequire('jquery-dreamstream');\n```\n\nor loaded in by just using a script tag:\n\n```html\n<script src=\"jquery-dreamstream/jquery-dreamstream.js\"></script>\n```\n\n## Use\n\nTo use the plugin, just select the element you'd like to stream and call the `dreamStream()` method on it:\n\n```js\n$('.stream').dreamStream();\n```\n\nAlternatively, you can call `dreamStream()` with options:\n\n```js\n$('.stream').dreamStream({\n  interval     : 2000,\n  speed        : 200,\n  onAfterScroll: function() { alert('hey, scroll just finished') })\n});\n```\n",
-  "readmeFilename": "README.md",
-  "_id": "jquery-dreamstream@0.1.5",
-  "_from": "jquery-dreamstream@"
+  "keywords": [
+    "jquery",
+    "stream",
+    "scroller"
+  ],
+  "author": "Zak Angelle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zakangelle/jquery-dreamstream/issues"
+  },
+  "homepage": "https://github.com/zakangelle/jquery-dreamstream"
 }
