@@ -1,4 +1,5 @@
 node_modules
 
 # temp
-index.html
+build.js
+index*.html
