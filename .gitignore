@@ -1,4 +1,8 @@
+# npm
 node_modules
+
+# dist
+jquery.dreamstream.js
 
 # temp
 index*.html

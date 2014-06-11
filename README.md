@@ -41,11 +41,11 @@ To generate a script tag ready jQuery plugin, do:
 $ npm run build
 ```
 
-The compiled file will be output to `dist/jquery.dreamstream.js`.
+The compiled file will be output to `jquery.dreamstream.js`.
 
 ```html
 <script src="path/to/jquery.js"></script>
-<script src="dist/jquery.dreamstream.js"></script>
+<script src="jquery.dreamstream.js"></script>
 <script>
   $('.dreamStream').dreamStream();
 </script>
