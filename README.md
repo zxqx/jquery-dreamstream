@@ -63,3 +63,17 @@ $('.dream-stream').dreamStream({
   onAfterScroll: function() { console.log('hey, scroll just finished') }
 });
 ```
+
+## Events 
+
+Trigger a `pause` event:
+
+```js
+$('.dream-stream').trigger('dreamStream:pause');
+```
+
+Trigger a `resume` event:
+
+```js
+$('.dream-stream').trigger('dreamStream:resume');
+```
