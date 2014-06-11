@@ -12,7 +12,7 @@ $ npm install jquery-dreamstream
 
 ## Use
 
-Wrap your `<ul>` of stream items in a container and call the `dreamStream()` method on the container element:
+Wrap your `<ul>` of stream items in a container and call the `dreamStream()` method on it:
 
 **HTML**:
 ```html
@@ -50,6 +50,8 @@ The compiled file will be output to `dist/jquery.dreamstream.js`.
   $('.dreamStream')>dreamStream();
 </script>
 ```
+
+## Options
 
 Alternatively, you can call `dreamStream()` with options:
 
