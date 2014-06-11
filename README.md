@@ -34,9 +34,18 @@ $('.dream-stream').dreamStream();
 ```
 
 **Using with script tags**:
+
+To generate a script tag ready jQuery plugin, do:
+
+```
+$ npm run build
+```
+
+The compiled file will be output to `dist/jquery.dreamstream.js`.
+
 ```html
 <script src="path/to/jquery.js"></script>
-<script src="jquery-dreamstream/dist/jquery.dreamstream.js"></script>
+<script src="dist/jquery.dreamstream.js"></script>
 <script>
   $('.dreamStream')>dreamStream();
 </script>
