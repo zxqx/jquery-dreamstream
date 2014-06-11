@@ -25,7 +25,7 @@ Wrap your `<ul>` of stream items in a container and call the `dreamStream()` met
 </div>
 ```
 
-**CommonJS**:
+**Using with CommonJS**:
 ```js
 var $ = require('jquery');
 require('jquery-dreamstream')($);
@@ -33,7 +33,7 @@ require('jquery-dreamstream')($);
 $('.dream-stream').dreamStream();
 ```
 
-**Old school**:
+**Using with script tags**:
 ```html
 <script src="path/to/jquery.js"></script>
 <script src="jquery-dreamstream/dist/jquery.dreamstream.js"></script>
