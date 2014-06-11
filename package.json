@@ -1,6 +1,6 @@
 {
   "name": "jquery-dreamstream",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "A simple vertical list scroller plugin for jQuery.",
   "main": "jquery.dreamstream.js",
   "scripts": {
