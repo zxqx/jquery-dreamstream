@@ -4,7 +4,8 @@
   "description": "A simple vertical list scroller plugin for jQuery.",
   "main": "jquery.dreamstream.js",
   "scripts": {
-    "build": "browserify build.js > jquery.dreamstream.js"
+    "build": "browserify build.js > jquery.dreamstream.js",
+    "test": "tape ./test/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "browserify": "^4.1.9",
+    "jsdom": "^0.10.6",
     "tape": "^2.13.3"
   }
 }
