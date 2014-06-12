@@ -27,7 +27,6 @@
   },
   "devDependencies": {
     "browserify": "^4.1.9",
-    "jsdom": "^0.10.6",
     "tape": "^2.13.3"
   }
 }

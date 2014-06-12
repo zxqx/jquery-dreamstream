@@ -1,5 +1,4 @@
 var test        = require('tape');
-var jsdom       = require('jsdom');
 var DreamStream = require('../lib/DreamStream.js');
 
 test('Throws on bad element param', function(t) {
