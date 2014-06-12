@@ -2,6 +2,9 @@
 
 A simple vertical list scroller plugin for jQuery.
 
+[![browser support](https://ci.testling.com/zakangelle/jquery-dreamstream.png)
+](https://ci.testling.com/zakangelle/jquery-dreamstream)
+
 ## Installation
 
 via npm:
