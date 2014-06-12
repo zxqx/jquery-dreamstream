@@ -38,7 +38,7 @@ $('.dream-stream').dreamStream();
 To generate a script tag ready jQuery plugin, do:
 
 ```
-$ npm run build
+$ npm install && npm run build
 ```
 
 The compiled file will be output to `jquery.dreamstream.js`.
